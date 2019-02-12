@@ -3,7 +3,7 @@ namespace ECS.Refactored
 {
     public class TempSensor : ITempSensor
     {
-        private Random _gen = new Random();
+        private IRandomNumGenerator _gen = new RandomNumGenerator();
 
         public int GetTemp()
         {

@@ -8,14 +8,20 @@ namespace ECS.Refactored
 {
     class Heater : IHeater
     {
+        private IWriter _writer;
+
+        public Heater()
+        {
+            _writer = new Writer();
+        }
         public void TurnOn()
         {
-            System.Console.WriteLine("Heater is on");
+            _writer.WriteLine("Heater is on");
         }
 
         public void TurnOff()
         {
-            System.Console.WriteLine("Heater is off");
+            _writer.WriteLine("Heater is off");
         }
 
         public bool RunSelfTest()
