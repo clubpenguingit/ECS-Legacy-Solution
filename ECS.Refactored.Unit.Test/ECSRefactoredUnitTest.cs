@@ -10,6 +10,11 @@ namespace ECS.Refactored.Unit.Test
     [TestFixture]
     public class ECSRefactoredUnitTest
     {
+        public void SetUp()
+        {
+            ECS uut = new ECS(75, new FakeTempSensor(), new FakeHeater());
+        }
+
         [Test]
         public void JenkinsTest()
         {
