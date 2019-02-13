@@ -10,9 +10,11 @@ namespace ECS.Refactored.Unit.Test
     [TestFixture]
     public class ECSRefactoredUnitTest
     {
+        private ECS uut;
+        [SetUp]
         public void SetUp()
         {
-            ECS uut = new ECS(75, new FakeTempSensor(), new FakeHeater());
+            uut = new ECS(75, new FakeTempSensor(), new FakeHeater());
         }
 
         [Test]
