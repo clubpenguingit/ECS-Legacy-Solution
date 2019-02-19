@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,5 +36,19 @@ namespace ECS.Refactored.Unit.Test.Nsub
             mockHeater.Received(0).TurnOn();
             mockHeater.Received(1).TurnOff();
         }
+
+        [Test]
+        public void Regulate_exceptionTestEvenThoughThereIsNoneToBeThrown_throws()
+        {
+            var mockHeater = Substitute.For<IHeater>();
+            var stubSensor = Substitute.For<ITempSensor>();
+            int threshold = 50;
+            var uut = new ECS(threshold, stubSensor, mockHeater);
+            stubSensor.When(x => x.GetTemp())
+                .Do( x => throw new ArgumentException());
+            Assert.Throws<ArgumentException>( () => stubSensor.GetTemp());
+        }
+
+      
     }
 }
