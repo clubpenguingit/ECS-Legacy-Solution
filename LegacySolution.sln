@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Refactored", "ECS.Refac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Refactored.Unit.Test", "ECS.Refactored.Unit.Test\ECS.Refactored.Unit.Test.csproj", "{D3C2BAA6-27F4-4D08-85E6-32C60FA8F16D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS.Refactored.Unit.Test.Nsub", "ECS.Refactored.Unit.Test.Nsub\ECS.Refactored.Unit.Test.Nsub.csproj", "{C5F66C27-B939-4B8D-8337-CBB62E736EFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{D3C2BAA6-27F4-4D08-85E6-32C60FA8F16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C2BAA6-27F4-4D08-85E6-32C60FA8F16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C2BAA6-27F4-4D08-85E6-32C60FA8F16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F66C27-B939-4B8D-8337-CBB62E736EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F66C27-B939-4B8D-8337-CBB62E736EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F66C27-B939-4B8D-8337-CBB62E736EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F66C27-B939-4B8D-8337-CBB62E736EFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
